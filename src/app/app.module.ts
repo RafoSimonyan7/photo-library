@@ -4,9 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
-import { FavoritesComponent } from './components/favorites/favorites.component';
 import { PhotosComponent } from './components/photos/photos.component';
-import { SinglePhotoComponent } from './components/single-photo/single-photo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,9 @@ import { SinglePhotoComponent } from './components/single-photo/single-photo.com
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

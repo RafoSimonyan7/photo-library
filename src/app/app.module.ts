@@ -12,9 +12,7 @@ import { SinglePhotoComponent } from './components/single-photo/single-photo.com
   declarations: [
     AppComponent,
     ErrorPageComponent,
-    FavoritesComponent,
     PhotosComponent,
-    SinglePhotoComponent,
   ],
   imports: [
     BrowserModule,

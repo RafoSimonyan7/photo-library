@@ -1,0 +1,17 @@
+.single-image {
+    &__photo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    &__button {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

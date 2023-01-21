@@ -1,1 +1,8 @@
-<p>single-photo works!</p>
+<div class="single-image">
+    <div class="single-image__photo">
+      <img src="{{singlePhoto.download_url}}">
+    </div>
+    <div class="single-image__button">
+      <button mat-raised-button color="warn" (click)="removePhotoFromFavorites(singlePhoto.id)">Remove From Favorites</button>
+    </div>
+</div>

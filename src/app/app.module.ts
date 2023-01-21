@@ -6,6 +6,9 @@ import { SharedModule } from './shared/shared.module';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
+    MatGridListModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

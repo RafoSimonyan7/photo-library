@@ -1,1 +1,15 @@
-<p>photos works!</p>
+<div class="image" >
+    <div class="image__container">
+      <mat-grid-list cols="6" rowHeight="200px" [gutterSize]="'10px'" >
+        <mat-grid-tile colspan="2" class="image__container--photo"
+                       *ngFor="let photo of photos; trackBy: trackBy">
+                       <app-photo-card [photo]="photo"></app-photo-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+
+<div *ngIf="loading$ | async" class="loading-spinner">
+    <mat-spinner diameter="60"></mat-spinner>
+ </div>
+  

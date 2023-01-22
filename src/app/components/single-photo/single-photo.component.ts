@@ -17,8 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class SinglePhotoComponent {
   public singlePhoto!: IPhoto;
+  public favorites: IPhoto[] = [];
   private photoId: string | null= '';
-  private favorites: IPhoto[] = [];
 
   constructor(
     private storageService: StorageService,

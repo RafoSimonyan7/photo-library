@@ -15,8 +15,4 @@ export class StorageService {
   public getFavorites(key: string): string | null {
     return localStorage.getItem(key)
   }
-
-  public removeFavorite(key: string): void {
-    localStorage.removeItem(key);
-  }
 }

@@ -1,4 +1,15 @@
 <div class="header">
-    <a class="header__link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Photos</a>
-    <a class="header__link" routerLink="/favorites" routerLinkActive="active">Favorites</a>
+    <a 
+        class="header__link" 
+        routerLink="/"
+        routerLinkActive="header__link--active" 
+        [routerLinkActiveOptions]="{exact: true}"
+    >Photos
+    </a>
+    <a 
+        class="header__link" 
+        routerLink="/favorites" 
+        routerLinkActive="header__link--active"
+    >Favorites
+    </a>
 </div>

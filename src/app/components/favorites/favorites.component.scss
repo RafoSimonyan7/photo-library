@@ -1,0 +1,6 @@
+.image-container {
+    @media screen and (min-width: 1024px) {
+        max-width: 64vw;
+        margin: 0 auto;
+    }
+}

@@ -1,9 +1,14 @@
-<div class="image" >
-    <div class="image__container">
-        <mat-grid-list cols="6" rowHeight="200px" [gutterSize]="'10px'" >
-            <mat-grid-tile colspan="2" class="image__container--photo" *ngFor="let photo of favorites">
-                <app-photo-card [photo]="photo" [isFavorite]="true"></app-photo-card>
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
+<div class="image-container">
+    <mat-grid-list
+        cols="6"
+        rowHeight="200px"
+        gutterSize="10px"
+    >
+        <mat-grid-tile 
+            colspan="2"
+             *ngFor="let photo of favorites"
+        >
+            <app-photo-card [photo]="photo" [isFavorite]="true"></app-photo-card>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

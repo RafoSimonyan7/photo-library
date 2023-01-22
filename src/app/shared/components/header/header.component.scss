@@ -9,20 +9,20 @@
     align-items: center;
 
     &__link {
+        border-radius: 5px;
+        padding: 10px;
         text-decoration: none;
-        color: $dark-gray;
+        color: $headerButtonColor;
+        border: 1px solid $headerButtonActive;
 
         &:last-child {
             margin-left: 30px;
         }
-    }
-  }
   
-  .active {
-    border: 1px solid $gray-3;
-    color: $white;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: $gray-2;
+        &--active {
+            color: $headerButtonActiveColor;
+            background-color: $headerButtonActive;
+        }
+    }
   }
   
